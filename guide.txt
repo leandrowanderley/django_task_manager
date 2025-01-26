@@ -16,3 +16,25 @@ nome_do_projeto/
 
 rodar projeto:
 python manage.py runserver
+
+criar app:
+python manage.py startapp meu_app
+
+depois va para settings.py em django_task_manager e adicione-o em INSTALLED_APPS para o Django reconhecer esse app assim:
+INSTALLED_APPS = [
+    ...,
+    'meu_app',
+]
+
+
+
+Arquivos principais do Django
+settings.py: Contém as configurações do projeto, como banco de dados, apps instalados, idioma, etc.
+urls.py: Define as rotas (endpoints) do projeto. Ele conecta URLs às funções que as processam.
+models.py: É onde você define as tabelas do banco de dados usando classes Python.
+views.py: Contém a lógica do que será mostrado ao usuário ao acessar uma URL.
+Por exemplo:
+
+Uma URL é mapeada no urls.py.
+Quando acessada, ela chama uma função no views.py.
+O views.py pode usar os dados definidos no models.py (que se conectam ao banco).
