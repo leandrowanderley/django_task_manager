@@ -1,0 +1,18 @@
+criar projeto:
+django-admin startproject nome_do_projeto
+
+entrar no ambiente virtual:
+source venv/bin/activate
+
+estrutura do projeto:
+nome_do_projeto/
+    manage.py        # Script para gerenciar o projeto (rodar servidor, migrar banco, etc.)
+    nome_do_projeto/
+        __init__.py   # Arquivo para indicar que é um módulo Python
+        settings.py   # Configurações do projeto (como banco de dados, apps instalados)
+        urls.py       # Rotas principais do projeto
+        asgi.py       # Configuração para servidores ASGI (opcional)
+        wsgi.py       # Configuração para servidores WSGI (usado em produção)
+
+rodar projeto:
+python manage.py runserver
